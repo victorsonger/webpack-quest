@@ -1,6 +1,10 @@
 const path = require("path");
 
 module.exports = {
+  output: {
+    filename: 'app.js',
+    path: __dirname + '/output',
+  },
   module: {
     rules: [
       // {
