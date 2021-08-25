@@ -20,7 +20,7 @@ module.exports = {
         test: /\.js$/,
         loader: path.resolve(__dirname, "loader"),
         options: {
-          name: "a",
+          name: "myLoader",
         },
       },
     ],

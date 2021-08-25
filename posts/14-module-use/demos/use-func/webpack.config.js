@@ -5,7 +5,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: (info) => console.log(info) || [path.resolve(__dirname, "loader")],
+        use: (info) => { console.log('info---', info); return path.resolve(__dirname, "loader")},
       },
     ],
   },

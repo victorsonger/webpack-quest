@@ -1,3 +1,3 @@
-import hello from "./hello.js?name=webpack";
+import hello from "./hello.js?name=mockss";
 
 console.log(hello);
