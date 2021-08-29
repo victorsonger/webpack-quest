@@ -5,10 +5,11 @@
   "license": "MIT",
   "scripts": {
     "build:argv": "webpack ./app/index.js",
+    "build:argv2": "webpack --entry ./app/index.js --output ./dist/main.js",
     "build:file": "webpack --config webpack.config.demo.js"
   },
   "devDependencies": {
     "webpack": "4.44.1",
-    "webpack-cli": "3.3.12"
+    "webpack-cli": "3.3.12" 
   }
 }
