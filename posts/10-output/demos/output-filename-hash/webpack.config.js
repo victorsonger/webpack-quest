@@ -7,14 +7,14 @@ module.exports = {
     },
     output: {
         // filename: '[hash].js'
-        // filename: '[chunkhash].js'
-        filename: '[contenthash].js'
+        filename: '[chunkhash].js'
+        // filename: '[contenthash].js'
     },
     plugins: [
         new MiniCssExtractPlugin({
             // filename: '[hash].css'
-            // filename: '[chunkhash].css'
-            filename: '[contenthash].css'
+            filename: '[chunkhash].css'
+            // filename: '[contenthash].css'
         })
     ],
     module: {
