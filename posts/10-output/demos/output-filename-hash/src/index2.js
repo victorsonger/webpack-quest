@@ -1,3 +1,3 @@
 import './style/style.css'
 
-console.log('index2')
+console.log('index2-')

@@ -5,6 +5,7 @@ module.exports = {
   },
   output: {
     filename(chunkData) {
+      console.log('chunkData-----\n', chunkData);
       return chunkData.chunk.name === 'main' ? 'main.js' : `bundle.${chunkData.chunk.name}.js`
     }
   },
