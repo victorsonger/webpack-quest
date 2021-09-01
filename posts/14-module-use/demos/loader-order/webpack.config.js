@@ -9,10 +9,12 @@ module.exports = {
         rules: [
           {
             enforce: "pre",
-            loader: path.resolve(__dirname, "loader"),
-            options: {
-              name: "a2",
-            },
+            use: { // 这里去掉use这一层也是可以的，因为loader和options就相当于use.loader和use.options。 写在这里只是为了表明，enforce是在rules这一级下面，跟use平级
+              loader: path.resolve(__dirname, "loader"),
+              options: {
+                name: "a2",
+              },
+            }
           },
           {
             enforce: "pre",
