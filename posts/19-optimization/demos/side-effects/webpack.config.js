@@ -1,9 +1,16 @@
-module.exports = [false, true].map((sideEffects) => ({
+const TerserPlugin = require('terser-webpack-plugin')
+
+module.exports = [false, true].map((usedExports) => ({
   mode: "none",
   output: {
-    filename: `${sideEffects}.js`,
+    filename: `${usedExports}.js`,
   },
   optimization: {
-    sideEffects,
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({}),
+    ],
+    // sideEffects,
+    usedExports
   },
 }));
