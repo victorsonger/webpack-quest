@@ -1,1 +1,2 @@
-export default "Hot Module Replacement";
+console.log('dasdsa');
+export default "Hot modules replacement";

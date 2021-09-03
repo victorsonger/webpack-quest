@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --watch webpack.config.js ./node_modules/.bin/webpack-dev-server"
+    "dev": "nodemon --watch webpack.config.js node_modules/webpack-dev-server/bin/webpack-dev-server"
   },
   "devDependencies": {
     "html-webpack-plugin": "^4.5.0",
