@@ -1,12 +1,12 @@
 {
   "errors": [],
   "warnings": [],
-  "version": "4.44.2",
-  "hash": "dc8fccd110b852a7e550",
-  "time": 59,
-  "builtAt": 1602384822101,
+  "version": "4.46.0",
+  "hash": "5f6b3923d05194e5510b",
+  "time": 71,
+  "builtAt": 1632478764027,
   "publicPath": "",
-  "outputPath": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/dist",
+  "outputPath": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/dist",
   "assetsByChunkName": {
     "main": "main.js",
     "sub": "sub.js"
@@ -14,25 +14,35 @@
   "assets": [
     {
       "name": "2.js",
-      "size": 299,
-      "chunks": [2],
+      "size": 300,
+      "chunks": [
+        2
+      ],
       "chunkNames": [],
       "info": {},
       "emitted": true
     },
     {
       "name": "main.js",
-      "size": 8958,
-      "chunks": [0],
-      "chunkNames": ["main"],
+      "size": 8956,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
       "info": {},
       "emitted": true
     },
     {
       "name": "sub.js",
-      "size": 3824,
-      "chunks": [1],
-      "chunkNames": ["sub"],
+      "size": 3825,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "sub"
+      ],
       "info": {},
       "emitted": true
     }
@@ -40,28 +50,44 @@
   "filteredAssets": 0,
   "entrypoints": {
     "main": {
-      "chunks": [0],
-      "assets": ["main.js"],
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ],
       "children": {},
       "childAssets": {}
     },
     "sub": {
-      "chunks": [1],
-      "assets": ["sub.js"],
+      "chunks": [
+        1
+      ],
+      "assets": [
+        "sub.js"
+      ],
       "children": {},
       "childAssets": {}
     }
   },
   "namedChunkGroups": {
     "main": {
-      "chunks": [0],
-      "assets": ["main.js"],
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ],
       "children": {},
       "childAssets": {}
     },
     "sub": {
-      "chunks": [1],
-      "assets": ["sub.js"],
+      "chunks": [
+        1
+      ],
+      "assets": [
+        "sub.js"
+      ],
       "children": {},
       "childAssets": {}
     }
@@ -72,13 +98,19 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 282,
-      "names": ["main"],
-      "files": ["main.js"],
-      "hash": "ce40749d20d3109d2e66",
+      "size": 281,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "hash": "1f73a9337f4b848426c1",
       "siblings": [],
       "parents": [],
-      "children": [2],
+      "children": [
+        2
+      ],
       "childrenByOrder": {},
       "modules": [
         {
@@ -91,7 +123,9 @@
           "built": true,
           "optional": false,
           "prefetched": false,
-          "chunks": [0],
+          "chunks": [
+            0
+          ],
           "issuer": null,
           "issuerId": null,
           "issuerName": null,
@@ -115,16 +149,18 @@
         },
         {
           "id": 1,
-          "identifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
+          "identifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
           "name": "./src/index.js",
           "index": 1,
           "index2": 0,
-          "size": 219,
+          "size": 216,
           "cacheable": true,
           "built": true,
           "optional": false,
           "prefetched": false,
-          "chunks": [0],
+          "chunks": [
+            0
+          ],
           "issuer": "multi ./src/index.js ./src/index2.js",
           "issuerId": 0,
           "issuerName": "multi ./src/index.js ./src/index2.js",
@@ -153,20 +189,22 @@
           "providedExports": null,
           "optimizationBailout": [],
           "depth": 1,
-          "source": "function component(content) {\n    const result = document.createElement('div');\n    result.innerHTML = content;\n\n    return result;\n}\n\nimport('./demoName').then(demoName => {\n    conponent(`Webpack Demo:${demoName}`)\n})"
+          "source": "function component(content) {\n  const result = document.createElement(\"div\");\n  result.innerHTML = content;\n\n  return result;\n}\n\nimport(\"./demoName\").then((demoName) => {\n  conponent(`Webpack Demo:${demoName}`);\n});\n"
         },
         {
           "id": 2,
-          "identifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index2.js",
+          "identifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index2.js",
           "name": "./src/index2.js",
           "index": 2,
           "index2": 1,
-          "size": 23,
+          "size": 25,
           "cacheable": true,
           "built": true,
           "optional": false,
           "prefetched": false,
-          "chunks": [0],
+          "chunks": [
+            0
+          ],
           "issuer": "multi ./src/index.js ./src/index2.js",
           "issuerId": 0,
           "issuerName": "multi ./src/index.js ./src/index2.js",
@@ -192,10 +230,12 @@
               "loc": "main[1]"
             }
           ],
-          "providedExports": ["default"],
+          "providedExports": [
+            "default"
+          ],
           "optimizationBailout": [],
           "depth": 1,
-          "source": "export default 'index2'"
+          "source": "export default \"index2\";\n"
         }
       ],
       "filteredModules": 0,
@@ -215,10 +255,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 20,
-      "names": ["sub"],
-      "files": ["sub.js"],
-      "hash": "05b7923a6e8868064898",
+      "size": 22,
+      "names": [
+        "sub"
+      ],
+      "files": [
+        "sub.js"
+      ],
+      "hash": "b27269d822fe34b34c12",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -226,16 +270,18 @@
       "modules": [
         {
           "id": 3,
-          "identifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/sub.js",
+          "identifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/sub.js",
           "name": "./src/sub.js",
           "index": 3,
           "index2": 3,
-          "size": 20,
+          "size": 22,
           "cacheable": true,
           "built": true,
           "optional": false,
           "prefetched": false,
-          "chunks": [1],
+          "chunks": [
+            1
+          ],
           "issuer": null,
           "issuerId": null,
           "issuerName": null,
@@ -255,10 +301,12 @@
               "loc": "sub"
             }
           ],
-          "providedExports": ["default"],
+          "providedExports": [
+            "default"
+          ],
           "optimizationBailout": [],
           "depth": 0,
-          "source": "export default 'sub'"
+          "source": "export default \"sub\";\n"
         }
       ],
       "filteredModules": 0,
@@ -278,28 +326,34 @@
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 28,
+      "size": 30,
       "names": [],
-      "files": ["2.js"],
-      "hash": "5885b4ac0c795197ef54",
+      "files": [
+        "2.js"
+      ],
+      "hash": "e57dfb4f692a70ca4a8b",
       "siblings": [],
-      "parents": [0],
+      "parents": [
+        0
+      ],
       "children": [],
       "childrenByOrder": {},
       "modules": [
         {
           "id": 4,
-          "identifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/demoName.js",
+          "identifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/demoName.js",
           "name": "./src/demoName.js",
           "index": 4,
           "index2": 4,
-          "size": 28,
+          "size": 30,
           "cacheable": true,
           "built": true,
           "optional": false,
           "prefetched": false,
-          "chunks": [2],
-          "issuer": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
+          "chunks": [
+            2
+          ],
+          "issuer": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
           "issuerId": 1,
           "issuerName": "./src/index.js",
           "issuerPath": [
@@ -310,7 +364,7 @@
             },
             {
               "id": 1,
-              "identifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
+              "identifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
               "name": "./src/index.js"
             }
           ],
@@ -321,7 +375,7 @@
           "reasons": [
             {
               "moduleId": 1,
-              "moduleIdentifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
+              "moduleIdentifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
               "module": "./src/index.js",
               "moduleName": "./src/index.js",
               "type": "import()",
@@ -329,18 +383,20 @@
               "loc": "8:0-20"
             }
           ],
-          "providedExports": ["default"],
+          "providedExports": [
+            "default"
+          ],
           "optimizationBailout": [],
           "depth": 2,
-          "source": "export default 'Performance'"
+          "source": "export default \"Performance\";\n"
         }
       ],
       "filteredModules": 0,
       "origins": [
         {
           "moduleId": 1,
-          "module": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
-          "moduleIdentifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
+          "module": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
+          "moduleIdentifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
           "moduleName": "./src/index.js",
           "loc": "8:0-20",
           "request": "./demoName",
@@ -360,7 +416,9 @@
       "built": true,
       "optional": false,
       "prefetched": false,
-      "chunks": [0],
+      "chunks": [
+        0
+      ],
       "issuer": null,
       "issuerId": null,
       "issuerName": null,
@@ -384,16 +442,18 @@
     },
     {
       "id": 1,
-      "identifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
+      "identifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
       "name": "./src/index.js",
       "index": 1,
       "index2": 0,
-      "size": 219,
+      "size": 216,
       "cacheable": true,
       "built": true,
       "optional": false,
       "prefetched": false,
-      "chunks": [0],
+      "chunks": [
+        0
+      ],
       "issuer": "multi ./src/index.js ./src/index2.js",
       "issuerId": 0,
       "issuerName": "multi ./src/index.js ./src/index2.js",
@@ -422,20 +482,22 @@
       "providedExports": null,
       "optimizationBailout": [],
       "depth": 1,
-      "source": "function component(content) {\n    const result = document.createElement('div');\n    result.innerHTML = content;\n\n    return result;\n}\n\nimport('./demoName').then(demoName => {\n    conponent(`Webpack Demo:${demoName}`)\n})"
+      "source": "function component(content) {\n  const result = document.createElement(\"div\");\n  result.innerHTML = content;\n\n  return result;\n}\n\nimport(\"./demoName\").then((demoName) => {\n  conponent(`Webpack Demo:${demoName}`);\n});\n"
     },
     {
       "id": 2,
-      "identifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index2.js",
+      "identifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index2.js",
       "name": "./src/index2.js",
       "index": 2,
       "index2": 1,
-      "size": 23,
+      "size": 25,
       "cacheable": true,
       "built": true,
       "optional": false,
       "prefetched": false,
-      "chunks": [0],
+      "chunks": [
+        0
+      ],
       "issuer": "multi ./src/index.js ./src/index2.js",
       "issuerId": 0,
       "issuerName": "multi ./src/index.js ./src/index2.js",
@@ -461,23 +523,27 @@
           "loc": "main[1]"
         }
       ],
-      "providedExports": ["default"],
+      "providedExports": [
+        "default"
+      ],
       "optimizationBailout": [],
       "depth": 1,
-      "source": "export default 'index2'"
+      "source": "export default \"index2\";\n"
     },
     {
       "id": 3,
-      "identifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/sub.js",
+      "identifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/sub.js",
       "name": "./src/sub.js",
       "index": 3,
       "index2": 3,
-      "size": 20,
+      "size": 22,
       "cacheable": true,
       "built": true,
       "optional": false,
       "prefetched": false,
-      "chunks": [1],
+      "chunks": [
+        1
+      ],
       "issuer": null,
       "issuerId": null,
       "issuerName": null,
@@ -497,24 +563,28 @@
           "loc": "sub"
         }
       ],
-      "providedExports": ["default"],
+      "providedExports": [
+        "default"
+      ],
       "optimizationBailout": [],
       "depth": 0,
-      "source": "export default 'sub'"
+      "source": "export default \"sub\";\n"
     },
     {
       "id": 4,
-      "identifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/demoName.js",
+      "identifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/demoName.js",
       "name": "./src/demoName.js",
       "index": 4,
       "index2": 4,
-      "size": 28,
+      "size": 30,
       "cacheable": true,
       "built": true,
       "optional": false,
       "prefetched": false,
-      "chunks": [2],
-      "issuer": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
+      "chunks": [
+        2
+      ],
+      "issuer": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
       "issuerId": 1,
       "issuerName": "./src/index.js",
       "issuerPath": [
@@ -525,7 +595,7 @@
         },
         {
           "id": 1,
-          "identifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
+          "identifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
           "name": "./src/index.js"
         }
       ],
@@ -536,7 +606,7 @@
       "reasons": [
         {
           "moduleId": 1,
-          "moduleIdentifier": "/Users/peterchen/Documents/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
+          "moduleIdentifier": "/Users/victorsan/Documents/GitHub/webpack-quest/posts/27-production-analyze/demos/cli-args-json/src/index.js",
           "module": "./src/index.js",
           "moduleName": "./src/index.js",
           "type": "import()",
@@ -544,10 +614,12 @@
           "loc": "8:0-20"
         }
       ],
-      "providedExports": ["default"],
+      "providedExports": [
+        "default"
+      ],
       "optimizationBailout": [],
       "depth": 2,
-      "source": "export default 'Performance'"
+      "source": "export default \"Performance\";\n"
     }
   ],
   "filteredModules": 0,
