@@ -7,3 +7,6 @@ const ast = parse(content, {
 });
 
 console.log(ast);
+ast.program.body.forEach((item, index) => {
+  console.log('ast body', index, item);
+})
