@@ -31,6 +31,9 @@ function createAsset(fileName) {
 function createGraph(entry) {
   const graph = [createAsset(entry)];
 
+  // 这个二层循环，里层循环会往外层循环的主体 graph 中不断地添加项目。
+  // 初始时graph中只有一个项目（即entry文件对应的asset信息，但是随着其dependencies循环，graph中会被推入新的项目）
+  // 本质上这是把一个递归改造成了循环
   for (const asset of graph) {
     const dirname = path.dirname(asset.fileName);
 

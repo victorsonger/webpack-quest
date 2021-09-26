@@ -16,13 +16,16 @@
 
       var _message = _interopRequireDefault(require("./message.js"));
 
+      var _demoName = require("./demoName.js");
+
       function _interopRequireDefault(obj) {
         return obj && obj.__esModule ? obj : { default: obj };
       }
 
       console.log(_message["default"]);
+      console.log("demoName----", _demoName.demoName);
     },
-    { "./message.js": 1 },
+    { "./message.js": 1, "./demoName.js": 2 },
   ],
   1: [
     function (module, exports, require) {
@@ -39,9 +42,22 @@
 
       exports["default"] = _default;
     },
-    { "./demoName.js": 2 },
+    { "./demoName.js": 3 },
   ],
   2: [
+    function (module, exports, require) {
+      "use strict";
+
+      Object.defineProperty(exports, "__esModule", {
+        value: true,
+      });
+      exports.demoName = void 0;
+      var demoName = "simple";
+      exports.demoName = demoName;
+    },
+    {},
+  ],
+  3: [
     function (module, exports, require) {
       "use strict";
 
