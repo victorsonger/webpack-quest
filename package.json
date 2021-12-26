@@ -17,5 +17,8 @@
   },
   "lint-staged": {
     "*.{js,json,css,html,pug,md}": "yarn lint:prettier"
+  },
+  "dependencies": {
+    "loader-utils": "^3.1.0"
   }
 }
