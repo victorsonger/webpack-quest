@@ -1,1 +1,1 @@
-export default 'gama';
+export default 'gama-real';
